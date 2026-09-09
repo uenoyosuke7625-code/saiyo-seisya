@@ -116,6 +116,12 @@ h2.h{
 }
 .hero__note{ margin-top: 16px; font-size: 12.5px; color: var(--ink-3); letter-spacing: .04em; }
 .hero__band{ margin-top: 68px; }
+.hero__img{
+  width: 100%; aspect-ratio: 3/2; object-fit: cover;
+  /* 人物の頭が切れないよう、上寄りを残す */
+  object-position: center 30%;
+  background: var(--paper-warm);
+}
 
 /* 写真プレースホルダ：差し替え位置がひと目で分かる箱 */
 .ph{
@@ -295,6 +301,7 @@ table.req tr:first-child th, table.req tr:first-child td{ border-top: 1px solid 
   .cards, .results, .duties, .env, .f2{ grid-template-columns: 1fr; }
   .hd .btn{ display: none; }
   .ph--hero{ aspect-ratio: 4/3; }
+  .hero__img{ aspect-ratio: 4/3; object-position: center 28%; }
   table.req th{ width: 116px; padding: 16px 14px; }
   table.req td{ padding: 16px 14px; }
   .ft{ padding-bottom: 110px; }
@@ -328,7 +335,9 @@ table.req tr:first-child th, table.req tr:first-child td{ border-top: 1px solid 
   <p class="hero__note">大阪市西区北堀江／四ツ橋駅 徒歩3分・心斎橋駅 徒歩8分</p>
 
   <div class="hero__band wrap">
-    <div class="ph ph--hero"><b>写真①</b>ジム全景／認知動作型マシンが並ぶ空間（横長・明るめ）</div>
+    <img class="hero__img" src="images/hero.jpg"
+         alt="Revive Gym 北堀江の店内。青い認知動作型トレーニングマシンが並ぶ空間に立つ代表の上野遥介"
+         width="1079" height="780" fetchpriority="high" decoding="async">
   </div>
 </section>
 
