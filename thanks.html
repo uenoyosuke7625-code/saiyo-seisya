@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>エントリーありがとうございます｜Revive Gym 採用</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap');
+:root{
+  color-scheme: light;
+  --paper:#FCFAF7; --ink:#23201D; --ink-2:#6B625A; --ink-3:#9A9089;
+  --line:#E7DFD4; --blue:#2E8BF2; --blue-deep:#1A6BC7;
+  --mincho:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --gothic:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;
+}
+*{ box-sizing:border-box; }
+body{
+  margin:0; min-height:100vh; background:var(--paper); color:var(--ink);
+  font-family:var(--gothic); line-height:1.95; font-feature-settings:"palt" 1;
+  display:grid; place-content:center; text-align:center; padding:64px 24px;
+}
+.eyebrow{ font-family:var(--mincho); font-size:12.5px; letter-spacing:.3em; color:var(--blue); margin:0 0 22px; }
+h1{ font-family:var(--mincho); font-weight:600; font-size:clamp(24px,4.6vw,34px); line-height:1.7; letter-spacing:.04em; margin:0 0 24px; text-wrap:balance; }
+p{ margin:0 0 1.4em; color:var(--ink-2); font-size:15px; line-height:2.15; }
+hr{ width:44px; height:1px; background:var(--line); border:0; margin:0 auto 34px; }
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:15px 36px; border-radius:999px; background:var(--blue); color:#fff;
+  text-decoration:none; font-size:15px; letter-spacing:.06em;
+  box-shadow:0 6px 18px rgba(46,139,242,.26); transition:background .2s;
+}
+.btn:hover{ background:var(--blue-deep); }
+:focus-visible{ outline:2px solid var(--blue-deep); outline-offset:3px; }
+.ft{ margin-top:48px; font-size:12.5px; color:var(--ink-3); }
+@media (prefers-reduced-motion: reduce){ *{ transition:none !important; } }
+</style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">THANK YOU</p>
+    <h1>エントリーいただき、<br>ありがとうございます。</h1>
+    <hr>
+    <p>内容を確認のうえ、<strong>3営業日以内</strong>に<br>ご記入いただいたメールアドレスへご連絡いたします。</p>
+    <p>万一、返信が届かない場合は<br>迷惑メールフォルダをご確認ください。</p>
+    <a class="btn" href="/">採用ページに戻る</a>
+    <p class="ft">Revive Gym 北堀江／株式会社Revive</p>
+  </main>
+</body>
+</html>
